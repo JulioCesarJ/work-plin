@@ -1,0 +1,94 @@
+/* ==== RESET CSS */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  --Blue:#6C63FF;
+  --Black:#000000;
+}
+
+body{
+  width: 100%;
+  height: auto;
+}
+
+/* === Grid Container */
+
+body{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, auto);
+}
+
+/* ==== Header ===== */
+
+#header{
+  display: flex;
+  width: 100%;
+  height: max-content;
+  flex-direction: column;
+}
+
+/* logo */
+.logo{
+  display: flex;
+  padding: 15px;
+  justify-content: center;
+}
+
+.logo img {
+  width: 50%;
+  height: auto;
+}
+
+/* Navbar */
+.navbar ul{
+  display: flex;
+  padding: 15px;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 1rem;
+}
+
+.navbar ul li {
+  display: block;
+  font-size: 1.5rem;
+}
+
+/* ==== Container-1 ===== */
+
+#container-1{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title{
+  width: 80%;
+}
+
+.title h1{
+  font-size: 2rem;
+  text-align: center;
+}
+
+.title span {
+  color: var(--Blue);
+  font-weight: bold;
+}
+
+.img-1{
+  display: flex;
+  justify-content: center;
+  width: auto;
+  height: auto;
+}
+
+.img-1 img {
+  width: 80%;
+  height: auto;
+}
